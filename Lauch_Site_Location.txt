@@ -1,0 +1,97 @@
+# Start location is NASA Johnson Space Center
+nasa_coordinate = [29.559684888503615, -95.0830971930759]
+site_map = folium.Map(location=nasa_coordinate, zoom_start=10)
+
+# Create a blue circle at NASA Johnson Space Center's coordinate with a popup label showing its name
+circle = folium.Circle(nasa_coordinate, radius=1000, color='#d35400', fill=True).add_child(folium.Popup('NASA Johnson Space Center'))
+
+# Create a blue circle at NASA Johnson Space Center's coordinate with a icon showing its name
+marker = folium.map.Marker(
+    nasa_coordinate,
+    # Create an icon as a text label
+    icon=DivIcon(
+        icon_size=(20,20),
+        icon_anchor=(0,0),
+        html='<div style="font-size: 12; color:#d35400;"><b>%s</b></div>' % 'NASA JSC',
+        )
+    )
+site_map.add_child(circle)
+site_map.add_child(marker)
+
+
+		Latitude	Longitude
+CCAFS LC-40	28.562302	-80.577356
+CCAFS SLC-40	28.563197	-80.576820
+KSC LC-39A	28.573255	-80.646895
+VAFB SLC-4E	34.632834	-120.610745
+
+
+
+folium.Circle(coordinate, radius=1000, color='#000000', fill=True).add_child(folium.Popup(...))
+folium.map.Marker(coordinate, icon=DivIcon(icon_size=(20,20),icon_anchor=(0,0), html='<div style="font-size: 12; color:#d35400;"><b>%s</b></div>' % 'label', ))
+site_map = folium.Map(location=some location, zoom_start=10)
+
+
+ccafs_LC40_coordinate =[28.562302, -80.577356]
+ccafs_SLC40_coordinate =[28.563197, -80.576820]
+ksc_LC39A_coordinate =[28.573255, -80.646895]
+vafb_SLC4E_coordinate =[34.632834, -120.610745]
+
+
+
+circle = folium.Circle(ccafs_LC40_coordinate, radius=1000, color='#d35400', fill=True).add_child(folium.Popup('CCAFS LC-40'))
+circle2 = folium.Circle(ccafs_SLC40_coordinate, radius=1000, color='#d35400', fill=True).add_child(folium.Popup('CCAFS SLC-40'))
+circle3 = folium.Circle(ksc_LC39A_coordinate, radius=1000, color='#d35400', fill=True).add_child(folium.Popup('KSC LC-39A'))
+circle4 = folium.Circle(vafb_SLC4E_coordinate, radius=1000, color='#d35400', fill=True).add_child(folium.Popup('VAFB SLC-4E'))
+
+
+site_map.add_child(circle)
+site_map.add_child(circle2)
+site_map.add_child(circle3)
+site_map.add_child(circle4)
+
+
+marker1 = folium.map.Marker(
+	ccafs_LC40_coordinate,
+	icon=DivIcon(
+        icon_size=(20,20),
+        icon_anchor=(0,0),
+        html='<div style="font-size: 12; color:#d35400;"><b>%s</b></div>' % 'CCAFS LC-40',
+        )
+)
+
+marker1 = folium.map.Marker(
+	ccafs_LC40_coordinate,
+	icon=DivIcon(
+        icon_size=(20,20),
+        icon_anchor=(0,0),
+        html='<div style="font-size: 12; color:#d35400;"><b>%s</b></div>' % 'CCAFS LC-40',
+        )
+)
+
+marker2 = folium.map.Marker(
+	ccafs_LC40_coordinate,
+	icon=DivIcon(
+        icon_size=(20,20),
+        icon_anchor=(0,0),
+        html='<div style="font-size: 12; color:#d35400;"><b>%s</b></div>' % 'CCAFS LC-40',
+        )
+)
+
+marker3 = folium.map.Marker(
+	ccafs_LC40_coordinate,
+	icon=DivIcon(
+        icon_size=(20,20),
+        icon_anchor=(0,0),
+        html='<div style="font-size: 12; color:#d35400;"><b>%s</b></div>' % 'CCAFS LC-40',
+        )
+)
+
+marker4 = folium.map.Marker(
+	ccafs_LC40_coordinate,
+	icon=DivIcon(
+        icon_size=(20,20),
+        icon_anchor=(0,0),
+        html='<div style="font-size: 12; color:#d35400;"><b>%s</b></div>' % 'CCAFS LC-40',
+        )
+)
