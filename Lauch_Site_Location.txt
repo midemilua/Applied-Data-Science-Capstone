@@ -60,38 +60,31 @@ marker1 = folium.map.Marker(
         )
 )
 
-marker1 = folium.map.Marker(
-	ccafs_LC40_coordinate,
-	icon=DivIcon(
-        icon_size=(20,20),
-        icon_anchor=(0,0),
-        html='<div style="font-size: 12; color:#d35400;"><b>%s</b></div>' % 'CCAFS LC-40',
-        )
-)
-
 marker2 = folium.map.Marker(
-	ccafs_LC40_coordinate,
+	ccafs_SLC40_coordinate,
 	icon=DivIcon(
         icon_size=(20,20),
         icon_anchor=(0,0),
-        html='<div style="font-size: 12; color:#d35400;"><b>%s</b></div>' % 'CCAFS LC-40',
+        html='<div style="font-size: 12; color:#d35400;"><b>%s</b></div>' % 'CCAFS SLC-40',
         )
 )
 
 marker3 = folium.map.Marker(
-	ccafs_LC40_coordinate,
+	ksc_LC39A_coordinate,
 	icon=DivIcon(
         icon_size=(20,20),
         icon_anchor=(0,0),
-        html='<div style="font-size: 12; color:#d35400;"><b>%s</b></div>' % 'CCAFS LC-40',
+        html='<div style="font-size: 12; color:#d35400;"><b>%s</b></div>' % 'KSC LC-39A',
         )
 )
 
+
+
 marker4 = folium.map.Marker(
-	ccafs_LC40_coordinate,
+	vafb_SLC4E_coordinate,
 	icon=DivIcon(
         icon_size=(20,20),
         icon_anchor=(0,0),
-        html='<div style="font-size: 12; color:#d35400;"><b>%s</b></div>' % 'CCAFS LC-40',
+        html='<div style="font-size: 12; color:#d35400;"><b>%s</b></div>' % 'VAFB SLC-4E',
         )
 )
